@@ -4,8 +4,8 @@ import img3 from "../images/user-circle.svg";
 import img4 from "../images/user-circle.svg";
 
 export const localFollowerCard = [
-  { accountName: "Andrew Thomas", userName: "AndrewThomas", img: img1 },
-  { accountName: "Hulk Buster", userName: "HulkBuster", img: img2 },
-  { accountName: "Thor", userName: "ThunderMaster", img: img3 },
-  { accountName: "Natasha", userName: "Natasha", img: img4 },
+  { accountName: "でとます", userName: "detohmas", img: img1 },
+  { accountName: "バトラー", userName: "butler", img: img2 },
+  { accountName: "トール", userName: "tooru", img: img3 },
+  { accountName: "Nakashima", userName: "nakashima", img: img4 },
 ];

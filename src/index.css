@@ -1,10 +1,14 @@
 :root {
   --white: #f3f8ff;
   --lightPurple: #e26ee5;
-  --defaultpurple: #7e30e1;
+  --defaultPurple: #7e30e1;
   --darkPurple: #49108b;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans",
@@ -19,7 +23,7 @@ code {
 }
 .App {
   text-align: center;
-  padding: 8px;
+  padding: 1rem;
 }
 .bgBlur {
   position: absolute;
@@ -28,6 +32,7 @@ code {
   border-radius: 50%;
   background: var(--lightPurple);
   filter: blur(72px);
+  z-index: -1;
 }
 .bgBlurLeftTop {
   top: -8%;
@@ -44,4 +49,27 @@ code {
 .bgBlurRightBottom {
   bottom: -8%;
   right: -8%;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  border: 2px solid var(--darkPurple);
+  border-radius: 0.5rem;
+  background: var(--darkPurple);
+  transition: all 0.2s ease-out;
+  transform-origin: center center;
+  padding: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--darkPurple);
+  background: transparent;
+}
+.iconHover {
+  cursor: pointer;
 }

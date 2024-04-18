@@ -4,19 +4,17 @@ import { localFollowerCard } from "../localData/localFollowersData";
 const FollowerCard = () => {
   return (
     <div style={followerCardStyle}>
-      <h3>Who is following you</h3>
+      <h3>フォロワー</h3>
 
       {localFollowerCard.map((follower, index) => {
         return (
           <div style={followerStyle} key={index}>
-            <div>
-              <img src={follower.img} alt="" style={followerImageStyle} />
-              <div style={followerNameStyle}>
-                <span>{follower.accountName}</span>
-                <span>@{follower.userName}</span>
-              </div>
+            <img src={follower.img} alt="" style={followerImageStyle} />
+            <div style={followerNameStyle}>
+              <span>{follower.accountName}</span>
+              <span>@{follower.userName}</span>
             </div>
-            <button style={followBtnStyle}>Follow</button>
+            <button className="button">フォロー中</button>
           </div>
         );
       })}
@@ -48,14 +46,8 @@ const followerImageStyle = {
 const followerNameStyle = {
   display: "flex",
   flexDirection: "column",
-  alignItems: "flex-start",
+  alignItems: "center",
   justifyContent: "center",
+  fontWeight: "bold",
 };
-
-const followBtnStyle = {
-  height: "2rem",
-  paddingLeft: "20px",
-  paddingRight: "20px",
-};
-
 export default FollowerCard;
