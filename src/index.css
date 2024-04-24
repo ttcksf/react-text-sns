@@ -1,13 +1,89 @@
+:root {
+  --white: #f3f8ff;
+  --lightPurple: #e26ee5;
+  --defaultPurple: #7e30e1;
+  --darkPurple: #49108b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+::-webkit-scrollbar {
+  width: 16px; /* 垂直方向のスクロールバーの幅 */
+}
+::-webkit-scrollbar-thumb {
+  background: var(--defaultPurple);
+  box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.2);
+}
+::-webkit-scrollbar-track {
+  background: var(--white);
+  box-shadow: inset 3px -3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App {
+  text-align: center;
+  padding: 1rem;
+}
+.bgBlur {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  background: var(--lightPurple);
+  filter: blur(72px);
+  opacity: 0.4;
+  z-index: -1;
+}
+.bgBlurLeftTop {
+  top: -16%;
+  left: -16%;
+}
+.bgBlurRightTop {
+  top: -16%;
+  right: -16%;
+}
+.bgBlurLeftBottom {
+  bottom: -16%;
+  left: -16%;
+}
+.bgBlurRightBottom {
+  bottom: -16%;
+  right: -16%;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  border: 2px solid var(--darkPurple);
+  border-radius: 0.5rem;
+  background: var(--darkPurple);
+  transition: all 0.2s ease-out;
+  transform-origin: center center;
+  padding: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--darkPurple);
+  background: transparent;
+}
+.iconHover {
+  cursor: pointer;
 }

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
+    "@iconscout/react-unicons-solid": "^1.0.2",
     "@mantine/core": "^7.8.0",
     "@mantine/hooks": "^7.8.0",
     "@testing-library/jest-dom": "^5.17.0",
