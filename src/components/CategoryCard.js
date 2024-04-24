@@ -4,7 +4,7 @@ import { localCategoryData } from "../localData/localCategoryData";
 const CategoryCard = () => {
   return (
     <div style={categoriesStyle}>
-      <h3>Trends for you</h3>
+      <h2>投稿件数</h2>
       {localCategoryData.map((cat, index) => {
         return (
           <div key={index} style={categoryStyle}>
