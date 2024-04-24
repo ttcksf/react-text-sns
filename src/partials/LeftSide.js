@@ -8,7 +8,7 @@ import CategoryCard from "../components/CategoryCard";
 
 const LeftSide = () => {
   return (
-    <div className="RightSide">
+    <div style={leftSideStyle}>
       <div style={navIconsStyle}>
         <UisHouseUser style={navIconImgStyle} />
         <UilSetting style={navIconImgStyle} />
@@ -19,7 +19,11 @@ const LeftSide = () => {
     </div>
   );
 };
-
+const leftSideStyle = {
+  display: "flex",
+  flexDirection: "column",
+  gap: "2rem",
+};
 const navIconsStyle = {
   marginTop: "1rem",
   display: "flex",
