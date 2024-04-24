@@ -18,8 +18,9 @@ const Top = () => {
 const topGridStyle = {
   position: "relative",
   display: "grid",
-  gridTemplateColumns: "18rem auto 20rem",
+  gridTemplateColumns: "32rem auto 20rem",
   gap: "1rem",
+  width: "100%",
 };
 
 export default Top;

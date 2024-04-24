@@ -20,11 +20,10 @@ const PostForm = () => {
     <div style={postFormStyle}>
       <img style={profIconStyle} src={profIcon} alt="" />
       <div style={formBoxStyle}>
-        <input
+        <textarea
           style={inputTextStyle}
-          type="text"
           placeholder="投稿してください"
-        />
+        ></textarea>
         <div style={attachmentStyle}>
           <div style={attachmentIcon} onClick={() => inputRef.current.click()}>
             <UilScenery />
@@ -61,6 +60,12 @@ const postFormStyle = {
   backgroundColor: "var(--defaultPurple)",
   padding: "1rem",
   borderRadius: "1rem",
+  position: "fixed",
+  top: "1rem",
+  left: "1rem",
+  zIndex: "2",
+  width: "32rem",
+  height: "320px",
 };
 
 const profIconStyle = {
@@ -81,6 +86,7 @@ const inputTextStyle = {
   fontSize: "1rem",
   border: "none",
   outline: "none",
+  height: "100%",
 };
 const attachmentStyle = {
   display: "flex",

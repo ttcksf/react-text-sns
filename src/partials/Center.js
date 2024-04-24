@@ -5,7 +5,6 @@ import PostForm from "../components/PostForm";
 const Center = () => {
   return (
     <div style={centerStyle}>
-      <PostForm />
       <PostArchive />
     </div>
   );
