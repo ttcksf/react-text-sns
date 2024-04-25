@@ -82,7 +82,7 @@ code {
 .button:hover {
   cursor: pointer;
   color: var(--darkPurple);
-  background: transparent;
+  background: var(--white);
 }
 .iconHover {
   cursor: pointer;
