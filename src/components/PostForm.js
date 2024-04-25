@@ -60,10 +60,6 @@ const postFormStyle = {
   backgroundColor: "var(--defaultPurple)",
   padding: "1rem",
   borderRadius: "1rem",
-  position: "fixed",
-  top: "1rem",
-  left: "1rem",
-  zIndex: "2",
   width: "32rem",
   height: "320px",
 };

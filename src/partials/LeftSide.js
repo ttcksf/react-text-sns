@@ -15,7 +15,6 @@ const leftSideStyle = {
   display: "flex",
   flexDirection: "column",
   gap: "2rem",
-  paddingTop: "320px",
 };
 
 export default LeftSide;
